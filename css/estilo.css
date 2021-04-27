@@ -1,0 +1,84 @@
+/*
+**** Seletor Universal ****
+
+* {
+    border: 1px solid red;
+}   
+
+*/
+
+
+/*
+**** Seletor de Texto ****
+
+
+h1 {
+    color: green;
+}   
+
+*/
+
+
+/*
+**** Seletor de Classe ****
+
+.verde {
+    color: green;
+}   
+
+p.verde {       /* o seletor verde é aplicado apenas em paragráfos 
+    color: green;
+}
+
+*/
+
+
+/*
+**** Seletor de ID ****
+
+#cabecalho {
+    border: 1px solid blue;
+}
+
+*/
+
+/*
+**** Seletor de filho ****
+
+li>a {
+    color: red;
+    text-decoration: none;
+}
+
+*/
+
+
+/*
+**** Seletor de descendente ****
+
+p a {
+    color: red;
+    text-decoration: none;
+}
+
+*/
+
+
+/*
+**** Seletor de irmao adjacente ****
+
+h1+p {
+    color: red;
+}   
+
+*/
+
+
+/*
+**** Seletor de irmao geral ****
+
+h1~p {
+    color: pink;
+}   
+
+*/
