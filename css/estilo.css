@@ -12,11 +12,28 @@ ul a {      /* Aplicar formatações nos links que estão dentro de ul */
     text-decoration: none;   /* remover underline do link */
     text-indent: 40px;  /* para empurrar o texto 40px para a direita */
     line-height: 40px;  /* usado do mesmo tamanho do height para centralizar o link */
-    background: url(../imagens/menu.png) no-repeat left bottom;
+    background: #f7b600 url(../imagens/menu.png) no-repeat left bottom;  
+    /* Essa cor f7b600 é para caso a imagem não carregue essa cor entrar no lugar da imagem */
 }
 
-a:hover {
+a:hover, .selecionado a {
     background-position: right bottom; /* para movimentar o backgroundo para direita e mudar de color */
+    background-color: #f99200;
+    /* Essa cor f99200 é para caso a imagem não carregue essa cor entrar no lugar da imagem */
+    color: white;
+}
+
+
+/* O seletor a seguir é para na barra de navegação vertical qual algum link for selecionado, ele ficará marcado com a cor f99200 e ficará na página relativa ao link. E usando o id da pagina, como por exemplo #home + #navegacao-vertical fica um seletor mais especifico, ou seja, poderemos ter outros tipos de navegação, que esse seletor abaixo será específico para a nossa navegação vertical */
+
+#home #navegacao-vertical .home a, 
+#sobre #navegacao-vertical .sobre a, 
+#servicos #navegacao-vertical .servicos a, 
+#noticias #navegacao-vertical .noticias a, 
+#contato #navegacao-vertical .contato a {
+    background-position: right bottom; /* para movimentar o backgroundo para direita e mudar de color */
+    background-color: #f99200;
+    /* Essa cor f99200 é para caso a imagem não carregue essa cor entrar no lugar da imagem */
     color: white;
 }
 
