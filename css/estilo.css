@@ -1,0 +1,32 @@
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+fieldset {
+    margin: 1em 0;      /* aumentar o espaçamento entre um fieldset e outro*/
+    padding: 1em;
+    border: 1px solid #ccc;
+    background: #f8f8f8;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;   /* deixar o nome da caixa em cima da caixa */
+    cursor: pointer;    /* o icone do mouse vira uma mão */
+}
+
+input [type="text"] {       /* para selecionar os input cujo o type seja text */
+    width: 20em;       /* aumentar o tamanho da caixa*/
+}
+
+textarea {
+    width: 20em;
+    height: 10em;
+}
+
+.radio {    /* para aumentar o espaço entre o marcador radio e o texto */
+    margin-right: 1em;
+}

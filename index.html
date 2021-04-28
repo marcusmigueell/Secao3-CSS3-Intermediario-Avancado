@@ -4,7 +4,7 @@
 
 <head>
 
-    <title>Document</title>
+    <title>Estilizando Formulários</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +14,66 @@
 </head>
 
 <body>
+
+    <h2>Estilizando Formulários</h2>
+
+    <form action="">
+
+        <fieldset>
+
+            <legend>Detalhes de contato</legend>
+
+            <div>
+                <label for="nome">Nome:</label>     <!-- for e id tem que ter o mesmo nome -->
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>     <!-- for e id tem que ter o mesmo nome -->
+                <input type="text" name="email" id="email">
+            </div>
+
+            <div>
+                <label for="url">URL:</label>     <!-- for e id tem que ter o mesmo nome -->
+                <input type="text" name="url" id="url">
+            </div>
+            
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Comentários</legend>
+
+            <div>
+                <label for="mensagem">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Lembrar de mim</legend>
+
+            <div>
+
+                <label>
+                    <input class="radio" type="radio" name="lembrar" id="sim">Sim
+                </label>
+
+            </div>
+
+            <div>
+
+                <label>
+                    <input class="radio" type="radio" name="lembrar" id="nao">Não
+                </label>
+
+            </div>
+
+        </fieldset>
+
+    </form>
     
 </body>
 
