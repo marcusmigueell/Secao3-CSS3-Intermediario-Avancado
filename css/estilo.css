@@ -1,41 +1,37 @@
+body {
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
 ul {
     margin: 0px;
     padding: 0px;
     list-style: none;  /* para remover as "bolinhas" antes de cada elemento da lista */
     width: 720px;   /*largura fixa */
-    background: #159cb0 url(../imagens/fundo-horizontal.png) repeat-x; 
-     /* Essa cor f99200 é para caso a imagem não carregue essa cor entrar no lugar da imagem e repeat-x repetir imagem na horizontal */
-     float: left;
 }
 
 ul li {
     float: left;  /* para deixar elementos fluantes e um <li> ao lado do outro*/
+    background: url(../imagens/aba-direita.png) no-repeat top right;
+    /* alinhar a partir da direita */
 }
 
-ul a {
+li a {
     display: block;  /* para converter em blocos para que o width seja aplicado */
     text-decoration: none;   /* remover underline do link */
     padding: 0 2em;     /* espaços entre os links */
-    line-height: 2.2em;    /* altura da linha */
+    line-height: 3em;    /* altura da linha */
+    background: url(../imagens/aba-esquerda.png) no-repeat top left;
     color: white;
-    background: url(../imagens/divisor.png) repeat-y left top;    /* repetir na vertical */
 } 
 
-ul .primeiro a {
-    background: none;  /* antes dessa linha ao carregar a imagem aparecia um divisor bem no começo da barra horizontal antes de home, então essa linha é para tirar esse divisor */
-}
-
 ul a:hover {
-    color: #085662;
-    background: #44cade;
+    color: #89401f;
 }
 
-#home #navegacao-horizontal .home a, 
-#sobre #navegacao-horizontal .sobre a, 
-#servicos #navegacao-horizontal .servicos a, 
-#noticias #navegacao-horizontal .noticias a, 
-#contato #navegacao-horizontal .contato a {
-    background-color: #44cade;
-    /* Essa cor 44cade é para caso a imagem não carregue essa cor entrar no lugar da imagem */
-    color: #085662;
+ul #atual {
+    background: url(../imagens/aba-direita-atual.png) no-repeat top right;
+}
+
+ul #atual a {
+    background: url(../imagens/aba-esquerda-atual.png) no-repeat top left;
 }
