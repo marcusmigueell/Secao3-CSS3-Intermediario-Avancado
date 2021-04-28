@@ -1,0 +1,31 @@
+ul {
+    list-style-type: none;  /* para remover as "bolinhas" antes de cada elemento da lista */
+    margin: 0px;    /* espaçamento de margin */
+    padding: 0px;   /* espaçamento interno */
+}
+
+ul a {      /* Aplicar formatações nos links que estão dentro de ul */
+    width: 200px;   /* tamanho da imagem que usei */
+    height: 40px;   /* altura do link */
+    display: block;  /* para converter em blocos para que o width seja aplicado */
+    color: #000;
+    text-decoration: none;   /* remover underline do link */
+    text-indent: 40px;  /* para empurrar o texto 40px para a direita */
+    line-height: 40px;  /* usado do mesmo tamanho do height para centralizar o link */
+    background: url(../imagens/menu.png) no-repeat left bottom;
+}
+
+a:hover {
+    background-position: right bottom; /* para movimentar o backgroundo para direita e mudar de color */
+    color: white;
+}
+
+/* esse li usado junto com o ul é para o exemplo comentado no index.html
+
+li {
+    padding: 5px 20px;   /* 10px - superior e inferior e 20px - esquerda e direita 
+    background: url(../imagens/seta.png) no-repeat left center; 
+    /* no-repeat para imagen não repetir, left center para alinhar a esquerda e no centro 
+} 
+
+*/
