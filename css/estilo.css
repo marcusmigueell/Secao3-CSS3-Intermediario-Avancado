@@ -1,0 +1,32 @@
+/* Especificidade precedencia de seletores */
+
+/*
+#pagina p {
+    color: blue !important;     
+}
+
+#pagina p {
+    color: red;
+}
+
+/* em seletores iguais o é que será carregado
+   ! important significa que esse seletor é mais importante que qualquer outro seletor igual */
+
+
+   /* Se um seletor for mais específico que outro a regra mais específica será aplicada, ou seja, terá prececência sobre regras mais gerais. */ 
+
+h2 {   /* seletor mais especifico */
+    color: blue;
+}
+   
+* {   /* seletor universal */
+    color: red;
+}
+
+h2.verde {    /* Seletor ainda mais especifico que somente h2*/
+    color: green;
+}
+
+h2#amarelo {   /* ID é mais especifico que a class por isso o texto ficará amarelo */
+    color: yellow;
+}
