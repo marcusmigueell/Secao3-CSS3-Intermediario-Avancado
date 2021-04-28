@@ -4,31 +4,40 @@ body {
 }
 
 #container {
-    width: 720px;
+    width: 960px;   /* layout liquido utliza porcentagem para definir o tamanho dos componentes*/
     margin: 0 auto;     /*auto para as laterais = centralizar*/
-    background: #fff;
+    background: #fff url(../imagens/coluna.png) repeat-y left top;   
+    min-width: 720px;        /* largura mínima do container */
+    max-width: 1280px;       /* largura máxima do container */
+    /* min-height: 720px;      /* altura mínima do container 
+       max-height: 960px;      /* altura máxima do container */
 }
 
 #marca {
-    height: 100px;      /* altura */
-    background: #9E9E9E;
+    height: 200%;      /* altura */
+    background: #225992 url(../imagens/cabecalho2.jpg) no-repeat center;
     text-align: center;     /* centralizar texto em relação as laterais */
-    line-height: 100px;     /* centralizar texto em relação a altura */
-    font-size: 2em;
+    line-height: 200px;     /* centralizar texto em relação a altura */
 }
 
 #conteudo {
-    width: 520px;
+    width: 75%;   /* 520px -> 74.28% */
     float: right;   /* flutuar o conteudo na direita da página */
 }
 
 #conteudo-principal {
-    width: 320px;
+    width: 63%;   /* 320px -> 64% */
     float: left;
 }
 
+img.img-noticia {
+    width: 94%;
+    padding: 2%;
+    max-width: 600px;
+}
+
 #conteudo-secundario {
-    width: 180px;
+    width: 34%;   /* 320px -> 36% */
     float: right;
     background: #d1d1d1;
 }
@@ -42,11 +51,10 @@ body {
 }
 
 #navegacao {
-    width: 180px;   /*180+520(conteudo) = 700 - 720(container) = 20 = espaço entre conteudo e navegação*/
+    width: 23%;   /*180+520(conteudo) = 700 - 720(container) = 20 = espaço entre conteudo e navegação*/
     float: left;
     padding-top: 20px;      /* espaçamento superior */
     padding-bottom: 20px;   /* espaçamento inferior */
-    background: #d1d1d1;
 }
 
 #navegacao ul {
