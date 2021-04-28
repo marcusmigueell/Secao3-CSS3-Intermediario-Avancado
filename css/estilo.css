@@ -1,6 +1,7 @@
 body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
-    background: #643d87 url(../imagens/fundo.jpg) no-repeat top center;
+    background: url(../imagens/fundo.jpg) no-repeat top center;
+    width: 100%;
 }
 
 #container {
