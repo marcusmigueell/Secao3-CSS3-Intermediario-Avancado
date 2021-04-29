@@ -1,4 +1,4 @@
-* {     /* deletando as configurações padrõs da página */
+* {     /* deletando as configurações padrões da página */
     margin: 0;
     padding: 0;
 }
@@ -30,16 +30,26 @@ body {
 /*
 **** Barra de Navegação ****
 */
+
+a:link, a:visited {
+    color: #b10333;
+    padding: 2px;
+}
+
+a:hover {
+    color: #e50040;
+}
+
 ul {
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style: none;       /* Remover as "bolinhas" do link */
 }
 
 #topo ul {
     margin-top: 30px;
     background: #b10333;
-    float: left;
+    float: left;        /* flutuar a esquerda*/
 }
 
 #topo ul li {
@@ -51,7 +61,7 @@ ul {
     display: block;
     padding: 0.5em 1.4em;
     line-height: 2.1em;     /* altura da barra com centralização pela altura */
-    text-decoration: none;
+    text-decoration: none;  /* remover o underline */
     color: #fff;
     background: url(../imagens/divisor.png) no-repeat left center;
 }
@@ -101,20 +111,21 @@ body.fotos #navegacao a#fotos {
 
 #duas-colunas #principal {
     width: 555px;
-    /* posicionando a div no meio do container 555 = 750(container) - [180(lateral)+15] de espaço entre as div's */
+    /* posicionando a div ao lado da lateral no container 555 = 750(container) - [180(lateral)+15] de espaço entre as div's */
 }
 
 #uma-coluna #principal {
     width: 750px;
-    /* posicionando a div no meio do container 555 = 750(container) - [180(lateral)+15] de espaço entre as div's */
+    /* posicionando a div em todo o container = 750(container) */
     margin: 0 0 20px 0;
-    /* para dar o espaço da div com id lateral, 195 = 180(lateral)+15 de espaço entre as div's */
+    /* para dar o espaço entre o container e o rodapé */
 }
 
 #secundario {
     width: 270px;
     float: left;
-    margin: 0 0 20px 15px;     /* foi usado para posicionar cada div no seu lugar, esse no lado direito do container */
+    margin: 0 0 20px 15px;     
+    /* foi usado para posicionar cada div no seu lugar, esse 20px para separar do rodapé e 15px é o espaçamento entre a <div>principal e a <div>secundario debtro do container */
 }
 
 /* 
@@ -141,6 +152,108 @@ h2 {
     margin-top: 5px;
 }
 
+/* 
+**** Formatar menus laterais ****
+*/
+
+#lateral ul a {
+    font-size: 0.9em;
+    padding: 3px;
+    display: block;
+    line-height: 30px;      /* altura entre os links*/
+    color: #000;
+    text-decoration: none;  /* remover underline*/
+    border: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover {
+    padding-left: 20px;
+    background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
+    color: #a1a1a1;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input {
+    padding: 5px;
+    width: 125px;
+    font-size: 0.9em;
+    background-color: #fff;
+}
+
+input.submit {
+    width: 80px;
+    color: #fff;
+    background-color: #b10333;
+    border: 2px solid #870529;
+}
+
+/* 
+**** Formatação das imagens ****
+*/
+
+img.imagem-principal {
+    width: 98%;         /* 98% do total da largura da <div> que a imagem pertence*/
+    border: 3px solid #dfdfdf;
+}
+
+/* 
+**** Formatando cabaeçalhos ****
+*/
+
+h3 {
+    text-transform: uppercase;      /* Deixar tudo maiusculo */
+    display: inline;
+    font-size: 0.8em;
+    padding: 3px;       /* Seguir o padrão do padding da img.imagem-principal*/
+}
+
+.destaque h3 {
+    background: #b10333;
+    color: #fff;
+}
+
+.entrevista h3 {
+    background: #de003e;
+}
+
+/* 
+**** Formatando lista de notícias ****
+*/
+
+#lista-noticias li{
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 62px;
+}
+
+#lista-noticias li a img {
+    float: left;
+    margin: 5px;
+}
+
+#lista-noticias li a {
+    text-decoration: none;      /* remover underline */
+}
+
+#lista-noticias li a h3 {
+    font-size: 0.8em;
+    padding: 0px;
+    color: #3e7ab9;
+}
+
+#lista-noticias li a p {
+    font-size: 0.7em;
+    color: black;
+}
+
+#lista-noticias li:hover {
+    background: #eee;
+    cursor: pointer;
+}
 
 /* 
 **** rodape ****

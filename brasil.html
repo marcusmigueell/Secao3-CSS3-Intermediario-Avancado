@@ -15,9 +15,9 @@
 
 <body id="duas-colunas" class="brasil">
 
-    <div id="container">  <!--Inicio do container-->
-        
-        <div id="topo"> <!--Inicio do topo-->
+    <div id="container"> <!--Inicio do container-->
+
+        <div id="topo">   <!--Inicio do topo-->
 
             <h1 class="logo">Notícias cidade</h1>
             <ul id="navegacao">
@@ -30,21 +30,118 @@
                 <li><a id="fotos" href="fotos.html">Fotos</a></li>
             </ul>
 
-        </div> <!--Fim do topo-->
+        </div>   <!--Fim do topo-->
 
-        <div id="conteudo"> <!--Inicio do conteúdo-->
+        <div id="conteudo">   <!--Inicio do conteúdo-->
 
-            <div id="principal">principal</div>
-            <div id="lateral">lateral</div>
+            <div id="principal">
 
-        </div> <!--Fim do conteúdo-->
+                <div class="caixa destaque">
 
-    </div> <!--Fim do container-->
+                    <h2>Destaque</h2>
+                    <div class="caixa-conteudo">
+                        <h3>Nova legislação</h3>
+                        <img class="imagem-principal" src="imagens/taxi.jpg" width="100%">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="">Leia mais!</a>
+                    </div>
+
+                </div>
+
+                <div class="caixa">
+                    <h2>Notícias recentes</h2>
+                    <div class="caixa-conteudo">
+
+                        <ul id="lista-noticias">
+                            <li>
+                                <a href="">
+                                    <img src="imagens/tecnologia.jpg" width="80">
+                                    <h3>Novas tecnologias</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur ...</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <img src="imagens/cidade.jpg" width="80">
+                                    <h3>Cidade</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur ...</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <img src="imagens/mundo.jpg" width="80">
+                                    <h3>Mundo</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur ...</p>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <img src="imagens/doutor.jpg" width="80">
+                                    <h3>Entrevista</h3>
+                                    <p>Lorem, ipsum dolor sit amet consectetur ...</p>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="lateral">  <!--Inicio da lateral-->
+                
+
+                <div class="caixa">
+
+                    <h2>Entrevistas</h2>
+                    <div class="caixa-conteudo">
+                        <ul>
+                            <li><a href="">José Almeida</a></li>
+                            <li><a href="">Felipe Silva</a></li>
+                            <li><a href="">Renato Rodrigues</a></li>
+                            <li><a href="">Abelardo Silveira</a></li>
+                            <li><a href="">André Carlos</a></li>
+                            <li><a href="">Márcio Mello</a></li>
+                            <li><a href="">João Pedro</a></li>
+                            <li><a href="">Fernando Weiss</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="caixa">
+
+                    <h2>News</h2>
+                    <div class="caixa-conteudo">
+                        <form action="">
+                            <div>
+                                <label for="email">Email:</label>
+                                <input type="text" name="email" id="email" placeholder="E-mail">
+                            </div>
+
+                            <div>
+                                <input class="submit" type="submit" value="Cadastrar">
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>  <!--Fim da lateral-->
+
+        </div>  <!--Fim do conteúdo-->
+
+    </div>  <!--Fim do container-->
 
     <div id="container-rodape" style="clear: both;">
-        
+
         <div id="rodape">&copy; Copyright 2020-2021 Notícias Cidade</div>
-        
+
     </div>
 
 </body>
