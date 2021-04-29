@@ -75,3 +75,49 @@ body.fotos #navegacao a#fotos {
     background: #de003e;
     cursor: text;
 }
+
+/* 
+**** configuração do layout de três colunas ****
+*/
+
+#conteudo {
+    margin-top: 60px;
+    background: #f5f5f5;    
+}
+
+#principal {
+    width: 270px;
+    background: blue;
+    float: left;
+    margin: 0 0 20px 195px;     /* foi usado para posicionar cada div no seu lugar, esse no meio do container */
+}
+
+#secundario {
+    width: 270px;
+    background: green;
+    float: left;
+    margin: 0 0 20px 15px;     /* foi usado para posicionar cada div no seu lugar, esse no lado direito do container */
+}
+
+#lateral {
+    width: 180px;
+    background: red;
+    float: left;
+    margin: 0 0 20px -750px;    
+    /* foi usado para posicionar cada div no seu lugar esse no lado esquerdo do container, 750px é a largura do container, usamos -750px para ir bem no inicio do container */
+}
+
+/* 
+**** rodape ****
+*/
+
+#container-rodape {
+    background: #294c71;
+    padding: 20px;
+}
+
+#rodape {
+    width: 750px;
+    margin: 0 auto;
+    color: #fff;
+}
