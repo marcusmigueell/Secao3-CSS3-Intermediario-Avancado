@@ -85,27 +85,62 @@ body.fotos #navegacao a#fotos {
     background: #f5f5f5;    
 }
 
-#principal {
-    width: 270px;
-    background: blue;
-    float: left;
-    margin: 0 0 20px 195px;     /* foi usado para posicionar cada div no seu lugar, esse no meio do container */
-}
-
-#secundario {
-    width: 270px;
-    background: green;
-    float: left;
-    margin: 0 0 20px 15px;     /* foi usado para posicionar cada div no seu lugar, esse no lado direito do container */
-}
-
 #lateral {
     width: 180px;
-    background: red;
     float: left;
     margin: 0 0 20px -750px;    
     /* foi usado para posicionar cada div no seu lugar esse no lado esquerdo do container, 750px é a largura do container, usamos -750px para ir bem no inicio do container */
 }
+
+#principal {
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 195px;
+    /* foi usado para posicionar cada div no seu lugar, esse no meio do container 195 = 180(lateral)+15 de espaço entre as div's */
+}
+
+#duas-colunas #principal {
+    width: 555px;
+    /* posicionando a div no meio do container 555 = 750(container) - [180(lateral)+15] de espaço entre as div's */
+}
+
+#uma-coluna #principal {
+    width: 750px;
+    /* posicionando a div no meio do container 555 = 750(container) - [180(lateral)+15] de espaço entre as div's */
+    margin: 0 0 20px 0;
+    /* para dar o espaço da div com id lateral, 195 = 180(lateral)+15 de espaço entre as div's */
+}
+
+#secundario {
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 15px;     /* foi usado para posicionar cada div no seu lugar, esse no lado direito do container */
+}
+
+/* 
+**** caixa ****
+*/
+
+.caixa {
+    margin: 10px 0;
+    padding: 5px 0 5px 0;
+    background: #f3f3f3 url(../imagens/fundo-caixa.png);
+}
+
+h2 {
+    font-size: 1em;
+    background: #294c71;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+.caixa-conteudo {
+    background: #fff;
+    padding: 5px;
+    margin-top: 5px;
+}
+
 
 /* 
 **** rodape ****
