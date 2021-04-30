@@ -66,7 +66,7 @@ body {
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 0.7em;
-    color: #8b848;
+    color: #8b8448;
 }
 
 #menu-locais .locais {
@@ -84,4 +84,34 @@ a.reserva {
     background-color: #a29750;
     color: #fff5b0;
     padding: 5px 10px;
+}
+
+#menu {
+    margin-top: 15px;
+}
+
+ul {
+    list-style: none;   /* tirar os marcadores das listas */
+}
+
+ul#navegacao {
+    float: left;
+}
+
+ul#navegacao a {
+    text-transform: uppercase;      /* deixar maiusculo */
+    font-size: 0.8em;
+    padding: 5px;
+    color: #6e672c;
+    line-height: 30px;              /* aumentar o espaço entre os links */
+}
+
+ul#navegacao a:hover {
+    background: #fdf6be;
+}
+
+.depoimento {
+    width: 226px;
+    height: 164px;  /* width e height é em relação à largura e altura da imagem depoimento */
+    float: right;
 }
