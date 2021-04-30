@@ -144,7 +144,62 @@ ul#navegacao a:hover {
     width: 90%;         /* ocupará 90% da área que ele estiver */
 }
 
+/*
+**** Rodapé ****
+*/
+
 #rodape {
     clear: both;        
     /* tenho que limpar para que a imagem que coloquei no container para ser aplicada nas áreas principal e lateral apareça */
+    padding: 16px;
+    background: #fff url(../imagens/bg-rodape.png) repeat-x top ;
+    color: #7d7640;
+    text-align: center;
+}
+
+/*
+**** Formatações de textos ****
+*/
+
+h2 {
+    color: #7d7640;
+    font-size: 1.1em;
+    padding: 5px 0;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/*
+**** Formatações dos links laterais ****
+*/
+
+#lista-conteudo li {
+    padding: 8px;
+    border-bottom: 1px solid #f3efcb;
+    height: 6em;
+}
+
+#lista-conteudo li a img {
+    float: left;
+    margin-right: 8px;
+}
+
+#lista-conteudo li a p {
+    color: #000;
+    font-size: 0.8em;
+}
+
+#lista-conteudo li a h3 {
+    font-size: 1em;
+    padding: 5px 0;
+    color: #615b2d;
+    background: url(../imagens/ornamento.png) no-repeat center right;
+}
+
+#lista-conteudo li:hover {
+    background: #f6f3d6;
+    cursor: pointer;
 }
