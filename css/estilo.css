@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #fff url(../imagens/bg.png);
+    margin: 15px;
+}
+
+#container {
+    background: #ede9cc;
+}
+
+#topo {
+    position: relative;     /* para deixar essa área fixa na pagina */
+    background: #dbcd87;
+    height: 15.4em;     /* unidade em, pois ao aumentar o texto ela aumenta conforme os textos */
+    min-height: 250px;  /* altura minima do topo */
+}
+
+#area-logo {
+    position: absolute;   /* para deixar essa área em cima do topo */
+    top: 0;
+    left: 0;              /* top e left zerado para colar essa area em cima do topo e no canto esquerdo */
+    background: url(../imagens/topo-imagem-principal.png) no-repeat;
+    width: 100%;
+    height: 250px;  /* referente a altura da imagem que foi usada no topo */
+}
+
+#area-menu {
+    position: absolute;     /* para deixar essa área em cima do topo e junto com a área-logo */
+    top: 0;
+    right: 0;               /* top e right zerado para colar essa area em cima do topo e no canto direito */
+    width: 450px;
+    height: 250px;  /* referente a altura da imagem que foi usada no topo */
+    background: url(../imagens/topo-imagem-lateral.png) no-repeat;
+}
