@@ -10,7 +10,7 @@ body {
 }
 
 #container {
-    background: #ede9cc;
+    background: #ede9cc url(../imagens/bg-container.png) top center repeat-y;
     margin: 0 auto;
     min-width: 740px;      /* para que as imagens e textos dentro do container(todo o site) não fiquem menor que 740px */
     max-width: 1180px;     /* para que as imagens e textos dentro do container não fiquem muito "esticados" 1180 por conta da minha imagem de topo */
@@ -114,4 +114,37 @@ ul#navegacao a:hover {
     width: 226px;
     height: 164px;  /* width e height é em relação à largura e altura da imagem depoimento */
     float: right;
+}
+
+
+/*
+**** Área de Conteúdos ****
+*/
+
+#area-principal {
+    float: left;
+    width: 50%;          /* para layout liquido as unidades de medidas serão em porcentagem*/
+    background: url(../imagens/bg-area-principal.png) top left repeat-x;
+    padding: 15px 0;
+}
+
+#area-principal h2 {
+    padding-top: 5px;
+}
+
+#area-lateral {
+    float: right;
+    width: 50%;          /* para layout liquido as unidades de medidas serão em porcentagem*/
+    background: url(../imagens/bg-area-lateral.png) top left repeat-x;
+    padding: 20px 0;    /* 15px da area-principal + 5px da area-principal h2 */
+}
+
+.conteudo {
+    margin: 0 auto;     /* centralizar */
+    width: 90%;         /* ocupará 90% da área que ele estiver */
+}
+
+#rodape {
+    clear: both;        
+    /* tenho que limpar para que a imagem que coloquei no container para ser aplicada nas áreas principal e lateral apareça */
 }
